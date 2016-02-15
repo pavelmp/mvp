@@ -16,29 +16,24 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  ItsTimeForLunchEveryone
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  HR students, take the stress out of your lunch arrangements!
 
-## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  This app allows the students to organize into groups based on where they would like to go for lunch. This removes uncertainty and saves precious time when the lunch break arrives
 
-## Problem ##
-  > Describe the problem your product solves.
+  Usually when lunch arrives nobody has any idea where they would like to go, so they probe other students for ideas. This process has significant time complexity and results in suboptimal choices given that information is incomplete and changes rapidly. 
 
-## Solution ##
-  > Describe how your product elegantly solves the problem.
+  This app allows students to see all available lunch options, pick one, and automatically join the group of people who chose the same option.
 
-## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "Take uncertainty out of your lunch break, enjoy your lunch everyone!!"
+    --Spokesperson 
 
-## How to Get Started ##
-  > Describe how easy it is to get started.
+  How to Get Started:
+  Just sign in with your GitHub account two minutes before lunch break and pick a place. Done!
 
-## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  Customer Quote:
+  "I finally enjoy what I eat and do it with people I can actually tolerate"
+    -- Pavel
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  Try the app today at www.ItsTimeForLunchEveryone.com

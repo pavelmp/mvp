@@ -1,0 +1,14 @@
+Mean stack
+
+App layout:
+
+1) List of places to go in a grid, with people who joined under each place
+2) Suggest new place
+3) Limit the list of places by who you would like to go with
+4) Pick a random spot
+
+Database:
+1) Users - save gitHub handles and link to their profile picture
+2) Users_WhoTheyLike join table
+3) List of places
+4) Users_PlacesVisited
