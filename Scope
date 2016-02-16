@@ -12,3 +12,385 @@ Database:
 2) Users_WhoTheyLike join table
 3) List of places
 4) Users_PlacesVisited
+
+
+  $scope.users_spots = [
+    {userId: 1,
+     spotId: 1,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 2,
+     spotId: 1,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 3,
+     spotId: 1,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 4,
+     spotId: 2,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 4,
+     spotId: 2,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 5,
+     spotId: 12,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 6,
+     spotId: 20,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 7,
+     spotId: 8,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 8,
+     spotId: 9,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 9,
+     spotId: 9,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 10,
+     spotId: 44,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 11,
+     spotId: 43,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 12,
+     spotId: 44,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 13,
+     spotId: 13,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 14,
+     spotId: 49,
+     date: new Date(2015, 2, 16)
+    },
+    {userId: 15,
+     spotId: 48,
+     date: new Date(2015, 2, 16)
+    }
+  ];
+
+
+  users = [
+    {id: 1,
+     displayName: 'Oliver Huang',
+     profilePhoto: 'http://static01.nyt.com/images/2016/01/07/t-magazine/07tmag-malemodels-slide-S1ZK/07tmag-malemodels-slide-S1ZK-blog427.jpg'
+    },
+    {id: 2,
+     displayName: 'Jonathan Blaising',
+     profilePhoto: 'http://liquor.s3.amazonaws.com/wp-content/uploads/2015/04/slideshow-actors-who-actually-got-drunk-while-filming-Daniel-Radcliffe.jpg'
+    },
+    {id: 3,
+     displayName: 'Hitesh Lala',
+     profilePhoto: 'http://i1.tribune.com.pk/wp-content/uploads/2015/11/984344-salmankhan-1446538914-172-640x480.jpg'
+    },
+    {id: 4,
+     displayName: 'Akshay Buddiga',
+     profilePhoto: 'http://s2.firstpost.in/wp-content/uploads/2015/09/vijay-tamil-actor_IBNlive.jpg'
+    },
+    {id: 5,
+     displayName: 'Hamzah Chaudhary',
+     profilePhoto: 'https://petabridge.com/images/2015/what-is-an-actor/wrong-actor-model.jpg'
+    },
+    {id: 6,
+     displayName: 'Alex Chou',
+     profilePhoto: 'http://www.showbiz411.com/wp-content/uploads/2013/05/anthony-mackie.jpg'
+    },
+    {id: 7,
+     displayName: 'Brian Ronaghan',
+     profilePhoto: 'http://f.tqn.com/y/socialanxietydisorder/1/L/o/4/-/-/RobertDeNiroGettySeanGallup.JPG'
+    },
+    {id: 8,
+     displayName: 'Michael Cheung',
+     profilePhoto: 'http://top10for.com/wp-content/uploads/2014/03/Sylvester-Stallone.jpg'
+    },
+    {id: 9,
+     displayName: 'Boya',
+     profilePhoto: 'http://media3.popsugar-assets.com/files/2011/11/46/4/192/1922283/3fa3543f40888007_NEW-ROBERT-THUMB.xxxlarge/i/Twilight-Actors-Before-Were-Famous-Including-Kristen-Stewart-Robert-Pattinson.jpg'
+    },
+    {id: 10,
+     displayName: 'Taylor Chamberlain',
+     profilePhoto: 'https://i.ytimg.com/vi/Pq2ihm8L8A4/maxresdefault.jpg'
+    },
+    {id: 11,
+     displayName: 'Diamond Wheeler',
+     profilePhoto: 'http://answersafrica.com/wp-content/uploads/2013/11/charlize-e1430412688126.jpeg'
+    },
+    {id: 12,
+     displayName: 'Leo B',
+     profilePhoto: 'http://www.wonderslist.com/wp-content/uploads/2013/02/Sunny-Leon.jpeg'
+    },
+    {id: 13,
+     displayName: 'Tiffany Thong',
+     profilePhoto: 'https://i.ytimg.com/vi/0Dmkd--6oi8/maxresdefault.jpg'
+    },
+    {id: 14,
+     displayName: 'Jing Li',
+     profilePhoto: 'http://top10for.com/wp-content/uploads/2014/02/Angelina-Jolie1.jpg'
+    },
+    {id: 15,
+     displayName: 'Leran Firer',
+     profilePhoto: 'http://l1.yimg.com/bt/api/res/1.2/a3msGgStarpOr9C2Gaygnw--/YXBwaWQ9eW5ld3NfbGVnbztpbD1wbGFuZTtxPTc1O3c9NjAw/http://media.zenfs.com/en/person/Ysports/lebron-james-basketball-headshot-photo.jpg'
+    }
+  ];
+
+  spots = [
+    {id: 1,
+     spotName: 'Amoura Cafe Fresh Mediterranean',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-1.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/jdda6zw6vrvahabb9xcr.png'
+    },
+    {id: 2,
+     spotName: 'Andale Mexican Restaurant',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/uujiebejlx54tdmxcnbz.png'
+    },
+    {id: 3,
+     spotName: 'Auntie Anne\'s Pretzels',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/v1/retailer/a/au-av/auntie-annes-pretzels/us/logos/4081logogray.png'
+    },
+    {id: 4,
+     spotName: 'Beard Papa\'s Cream Puffs',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/soxgtl6hwmh1zlhuwxhe.png'
+    },
+    {id: 5,
+     spotName: 'Bistro Burger',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/vhtwb7s1rwa7ayy7dcfp.png'
+    },        
+    {id: 6,
+     spotName: 'Bristol Farms',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/bzjh7pqs3phwuqsb2k9t.png'
+    },
+    {id: 7,
+     spotName: 'Buckhorn Grill',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/ubmsvtjpemucabqjo5zo.png'
+    },
+    {id: 8,
+     spotName: 'Cafe Bellini',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/khvb1fo5zwl2vdpzt6b3.png'
+    },
+    {id: 9,
+     spotName: 'Caffe Central',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-1.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/ppvioyihvc6vhueuepjq.png'
+    },
+    {id: 10,
+     spotName: 'Cako Bakery',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/xamqjykq6bjgyhuxas5e.png'
+    },
+    {id: 11,
+     spotName: 'Charley\'s Grilled Subs',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/iqm0ksralkfhadwjlqqs.png'
+    },
+    {id: 12,
+     spotName: 'Chipotle',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/ouw7suexvi2shcp8yvzt.png'
+    },
+    {id: 13,
+     spotName: 'Cocoabella Chocolates',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-1.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/aago2orln9kag9wzjrfr.png'
+    },
+    {id: 14,
+     spotName: 'Coriander Gourmet Thai',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/fmi3q697hzlmsrvolwwm.png'
+    },
+    {id: 15,
+     spotName: 'Cupola Pizzeria',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/mai7snoffku8nsz1dfmi.png'
+    },
+    {id: 16,
+     spotName: 'DAVIDsTEA',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/amtynswquhzm3onoxcuh.png'
+    },
+    {id: 17,
+     spotName: 'Fire of Brazil',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/eulcf0y6wrfr85stnybf.png'
+    },
+    {id: 18,
+     spotName: 'Ghirardelli Ice Cream and Chocolate Shop',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/nm6ns128lkf9wjl4f9yj.png'
+    },
+    {id: 19,
+     spotName: 'Godiva Chocolatier',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/j1utitna7chuun5kzq1j.png'
+    },
+    {id: 20,
+     spotName: 'Haagen Dazs',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/mhyj1f6txa7uyyr0hcx0.png'
+    },
+    {id: 21,
+     spotName: 'Jamba Juice',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/czsrye1fd4hbdpg2q1sq.png'
+    },
+    {id: 22,
+     spotName: 'Kichi Grill',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/l3gl2rcfvi3zx8z29foi.png'
+    },
+    {id: 23,
+     spotName: 'Loving Hut Vegan Cuisine',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/o1wzpjuhsu6sifwp2u6i.png'
+    },
+    {id: 24,
+     spotName: 'Lupicia Fresh Tea',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/hproq1byqfdr7umusifl.png'
+    },
+    {id: 25,
+     spotName: 'Mrs. Fields',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/guca23jy0o9hgdaq3xq2.png'
+    },
+    {id: 26,
+     spotName: 'M.Y. China',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/wsdgyzlglhrx8feoorbu.png'
+    },
+    {id: 27,
+     spotName: 'Napoleon\'s Macarons',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/giyrladtutolotsd63f3.png'
+    },
+    {id: 28,
+     spotName: 'Nordstrom Cafe Bistro',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/dje7cghb9skpjt84rsgv.png'
+    },
+    {id: 29,
+     spotName: 'Nordstrom E-Bar',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/augvcvivzlpnlubpdsax.png'
+    },
+    {id: 30,
+     spotName: 'Pacific Puffs',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/zbjjrg49pbszmhvkjhrx.png'
+    },
+    {id: 31,
+     spotName: 'Panda Express',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/i4wjcsgyzuz6nl0ykpnf.png'
+    },
+    {id: 32,
+     spotName: 'Pasta Moto',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/izszbp6lqnzy3ms33azx.png'
+    },
+    {id: 33,
+     spotName: 'Peet\'s Coffee & Tea',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/enxdy6gq9d9yhr7sxp7l.png'
+    },
+    {id: 34,
+     spotName: 'Pressed Juicery',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/ublefz9gr6xurte4ayt6.png'
+    },
+    {id: 35,
+     spotName: 'San Francisco Soup Company',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/jojcuz4a2imchvl89zb1.png'
+    },
+    {id: 36,
+     spotName: 'Sarku Japan',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/yocrchwij4jc0ovsmmlv.png'
+    },
+    {id: 37,
+     spotName: 'Sorabol Korean BBQ & Asian Noodles',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-3.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/ccjive02ebc2x0f8unyt.png'
+    },
+    {id: 38,
+     spotName: 'Starbucks',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-2.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/kzv0pn2m1fzdpibg4enx.png'
+    },
+    {id: 39,
+     spotName: 'TAP (415)',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-1.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/pozpdkqd6gdyxqplbnxb.png'
+    },
+    {id: 40,
+     spotName: 'Teavana',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/t2qzvjaxcvw4iqzyz9lc.png'
+    },
+    {id: 41,
+     spotName: 'Wetzel\'s Pretzels',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-4.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/vtq4iwvqkuckenrqknib.png'
+    },
+    {id: 42,
+     spotName: 'Yoppi Frozen Yogurt',
+     type: 'Foodcourt',
+     imageUrl: 'https://res-5.cloudinary.com/wlabs/image/fetch/b_white,c_pad,f_auto,g_center,h_300,q_90,w_300/http://res.cloudinary.com/wlabs/image/upload/obeujxazzgatl4ywuhkd.png'
+    },
+
+    {id: 43,
+     spotName: 'Super Duper',
+     type: 'Not foodcourt',
+     imageUrl: 'http://payload141.cargocollective.com/1/4/145285/5134955/superduper_3_905.png'
+    },
+    {id: 44,
+     spotName: 'Sushirrito',
+     type: 'Not foodcourt',
+     imageUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/5ced1a4544781.56366919925cb.png'
+    },
+
+    {id: 45,
+     spotName: 'Fitness SF',
+     type: 'Gym/Other',
+     imageUrl: 'http://www.futurereference.co/authority/wp-content/uploads/2015/10/fitnessSF-300x300.png'
+    },
+    {id: 46,
+     spotName: 'Crunch',
+     type: 'Gym/Other',
+     imageUrl: 'https://www.crunch.com/images/crunch-gyms-splash.png'
+    },
+    {id: 47,
+     spotName: 'Salvation Army',
+     type: 'Gym/Other',
+     imageUrl: 'http://vector.me/files/images/4/0/40963/the_salvation_army.png'
+    },
+    {id: 48,
+     spotName: '24 Hour Fitness',
+     type: 'Gym/Other',
+     imageUrl: 'http://www.thefallschurchpost.com/wp-content/uploads/2013/08/24hour_box.png'
+    },
+    {id: 49,
+     spotName: 'Basketball Court',
+     type: 'Gym/Other',
+     imageUrl: 'http://iconbug.com/data/36/256/4122a63dc66845f84a3cefb967398733.png'
+    }
+  ];

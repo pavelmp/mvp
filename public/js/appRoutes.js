@@ -4,10 +4,11 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             templateUrl: 'views/home.html',
             controller: 'SpotsController'
         })
-        .when('/nerds', {
-            templateUrl: 'views/nerd.html',
-            controller: 'NerdController'
-        });
+        .when('/trends', {
+            templateUrl: 'views/trends.html',
+            controller: 'TrendsController'
+        })
+        .otherwise({redirectTo: '/'});
 
     $locationProvider.html5Mode(true);
 }]);

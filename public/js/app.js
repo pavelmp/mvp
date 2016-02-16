@@ -1,1 +1,1 @@
-angular.module('myApp', ['ngRoute', 'appRoutes', 'myApp.spots', 'NerdCtrl', 'allServices']);
+angular.module('myApp', ['ngRoute', 'appRoutes', 'myApp.spots', 'myApp.trends', 'allServices']);

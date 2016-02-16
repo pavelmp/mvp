@@ -29,6 +29,9 @@ node_modules/
 bower_components/
 public/libs
 
+#Config file
+config/config.js
+
 # Floobits
 .floo
 .floobit

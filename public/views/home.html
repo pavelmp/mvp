@@ -2,17 +2,74 @@
     <h1>Foodcourt</h1>
 </div>
 <!-- Foodcourt spots -->
-<div class="row" ng-repeat="spot in spots | filter: {type: 'Foodcourt'}">
-      <div class="col-xs-4" ><img src='{{spot.imageUrl}}' width='200' height='auto'/></div>
-      <div class="col-xs-8">{{spot.spotName}}</div>
+<div class="row" ng-repeat="spot in spots | filter: {type: 'Foodcourt'}:true">
+      <div class="col-xs-4 spotDiv">
+        <img src='{{spot.imageUrl}}' width='auto' height='100%'/>
+      </div>
+      <!-- Square image -->
+      <div class="col-xs-8 spotDiv">
+        <div class="square" ng-repeat="user in usersInSpot[0]">
+           <div class="content">
+                <div class="table">
+                    <div class="table-cell bg" style="background-image: url({{user.profilePhoto}})">
+                      <p class="text">{{user.displayName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- I am in! square -->
+        <div class="square">
+           <div class="content">
+                <div class="table">
+                    <div class="table-cell bg" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg')">
+                      <p class="text">{{user.displayName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
 </div>
+
+</br>
 
 <div class="jumbotron text-center">
     <h1>Not Foodcourt</h1>
-    <p>{{ tagline }}</p>
 </div>
+<div class="row" ng-repeat="spot in spots | filter: {type: 'Not foodcourt'}:true">
+      <div class="col-xs-4 spotDiv">
+        <img src='{{spot.imageUrl}}' width='auto' height='100%'/>
+      </div>
+      <!-- Square image -->
+      <div class="col-xs-8">
+        <div class="square" ng-repeat="user in usersInSpot[spot.id]">
+           <div class="content">
+                <div class="table">
+                    <div class="table-cell bg" style="background-image: url({{user.profilePhoto}})">
+                      <p class="text">{{user.displayName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+
+</br>
 
 <div class="jumbotron text-center">
     <h1>Gym / Other</h1>
-    <p>{{ tagline }}</p>
+</div>
+<div class="row" ng-repeat="spot in spots | filter: {type: 'Gym/Other'}:true">
+      <div class="col-xs-4 spotDiv"><img src='{{spot.imageUrl}}' width='auto' height='100%'/></div>
+      <!-- Square image -->
+      <div class="col-xs-8">
+        <div class="square" ng-repeat="user in usersInSpot[spot.id]">
+           <div class="content">
+                <div class="table">
+                    <div class="table-cell bg" style="background-image: url({{user.profilePhoto}})">
+                      <p class="text">{{user.displayName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
 </div>
