@@ -1,0 +1,1 @@
+angular.module('myApp', ['ngRoute', 'appRoutes', 'myApp.spots', 'NerdCtrl', 'allServices']);

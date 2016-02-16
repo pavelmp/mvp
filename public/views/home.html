@@ -1,0 +1,18 @@
+<div class="jumbotron text-center">
+    <h1>Foodcourt</h1>
+</div>
+<!-- Foodcourt spots -->
+<div class="row" ng-repeat="spot in spots | filter: {type: 'Foodcourt'}">
+      <div class="col-xs-4" ><img src='{{spot.imageUrl}}' width='200' height='auto'/></div>
+      <div class="col-xs-8">{{spot.spotName}}</div>
+</div>
+
+<div class="jumbotron text-center">
+    <h1>Not Foodcourt</h1>
+    <p>{{ tagline }}</p>
+</div>
+
+<div class="jumbotron text-center">
+    <h1>Gym / Other</h1>
+    <p>{{ tagline }}</p>
+</div>
