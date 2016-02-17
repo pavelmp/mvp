@@ -4,6 +4,16 @@ angular.module('myApp.spots', []).controller('SpotsController', function($scope,
   $scope.spots = [];
   $scope.userSpots = [];
   $scope.usersInSpot = {};
+  $scope.lastSpot;
+
+  $scope.addMe = function(spotnumID){
+    if($scope.lastSpot !== undefined){
+      $scope.usersInSpot[$scope.lastSpot].pop();  
+    }
+    $scope.usersInSpot[spotnumID].push($scope.users[5]);
+    $scope.lastSpot = spotnumID;    
+    $scope.$apply();
+  };
 
   //To populate database with fake data
   var postAllThings = function(){
@@ -29,12 +39,18 @@ angular.module('myApp.spots', []).controller('SpotsController', function($scope,
 
   var retrieveUsers = function(){
     Users.get().then(function(users){
+      users.forEach(function(user,ind){
+        user.numID = ind;
+      })
       $scope.users = users;
     })
   };
 
   var retrieveSpots = function(){
     Spots.get().then(function(spots){
+      spots.forEach(function(spot,ind){
+        spot.numID = ind;
+      })
       $scope.spots = spots;
     });
   };
@@ -48,26 +64,20 @@ angular.module('myApp.spots', []).controller('SpotsController', function($scope,
   var populateSpots = function(){
     $scope.spots.forEach(function(spot,index){
       var userArray = $scope.userSpots.filter(function(userSpot){
-          return userSpot.spotId === index
+          return userSpot.spotId === spot.numID
         }).map(function(v){
           return v.userId
         });
 
-      $scope.usersInSpot[index] = $scope.users.filter(function(user,ind){
-        return userArray.indexOf(ind) !== -1;
+      $scope.usersInSpot[spot.numID] = $scope.users.filter(function(user,ind){
+        return userArray.indexOf(user.numID) >= 0;
       })
     })
   };
 
-  //setTimeout(addToDatabase,2000);
-  //Run function to populate all users for each spot
   retrieveUsers();
   retrieveSpots();
   retrieveUserSpots();
-  setTimeout(populateSpots,2000);
-
-  function Print(){
-    console.dir($scope.usersInSpot)
-  };
-  setTimeout(Print,3000);
+  setTimeout(populateSpots,500);
+  setTimeout($scope.$apply,1000);
 });
